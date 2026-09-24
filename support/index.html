@@ -1,1 +1,51 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="The Daily Quest: offline personal quests, support and privacy."><title>The support desk · The Daily Quest</title><link rel="stylesheet" href="../style.css"><link rel="icon" href="../crest.svg"></head><body><header><img src="../crest.svg" alt=""><a href="../">The Daily Quest</a><nav aria-label="Main"><a href="../news/">News</a><a href="../support/">Support</a><a href="../privacy/">Privacy</a></nav></header><main><h1>The support desk</h1><p class="lead">Need a hand with your quest journal?</p><p>Email <a href="mailto:lordtoad.apps@gmail.com">lordtoad.apps@gmail.com</a>. Include your device model, operating-system version, app version and what happened. Do not send passwords or your journal unless you intend to share it.</p><h2>Move your journal</h2><p>In Manage, choose Back up journal and save the JSON file. On the new installation, choose Restore backup and select it. Restoration replaces the destination journal after confirmation. CSV is for reports, not restoration.</p><h2>Before uninstalling</h2><p>Export JSON first. Your journal is stored locally and cannot be recovered by the publisher. Exported files remain wherever you saved them.</p><h2>Record a missed day</h2><p>Use the previous-day arrow or date picker on the board, then record progress as usual. It counts toward the selected scheduled day.</p></main><footer>© 2026 Raul Figueiredo Pazetto · LordToad<br><a href="mailto:lordtoad.apps@gmail.com">lordtoad.apps@gmail.com</a></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Version-specific help for local journals, the upcoming account edition, backups, scheduling and deletion.">
+  <title>The support desk · The Daily Quest</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="../crest.svg">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header><img src="../crest.svg" alt=""><a class="brand" href="../">The Daily Quest</a><nav aria-label="Main"><a href="../news/">News</a><a href="../support/" aria-current="page">Support</a><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a></nav></header>
+  <main id="main" tabindex="-1">
+    <h1>The support desk</h1>
+    <p class="lead">Need a hand with your quest journal?</p>
+    <p>Email <a href="mailto:lordtoad.apps@gmail.com">lordtoad.apps@gmail.com</a>. Include your device model, operating-system version, app version and what happened. Do not send passwords, sign-in tokens or a journal backup unless you intend to share its contents.</p>
+    <aside class="notice" aria-labelledby="support-versions">
+      <h2 id="support-versions">Check your app version</h2>
+      <p><strong>Version 1.0.8 is available to closed Alpha testers.</strong> It has a local-only journal and no account. <strong>Version 1.0.9 is upcoming and not yet available.</strong> Its account guidance below is a preview.</p>
+      <p><a href="../news/">Read verified release news</a> · <a href="#local-edition">Help for local-only journals</a> · <a href="#account-edition">Upcoming account guide</a></p>
+    </aside>
+    <h2 id="local-edition">Available builds through 1.0.8: local-only journals</h2>
+    <h3>Move your journal or keep a backup</h3>
+    <p>In Manage, choose <strong>Back up journal</strong> and save the JSON file outside the app. On the new installation, choose <strong>Restore backup</strong> and select it. Restore replaces the destination journal after confirmation. CSV is for reports, not restoration.</p>
+    <h3>Before uninstalling or clearing storage</h3>
+    <p>Export JSON first. In these local-only builds the publisher cannot recover your journal. There is no online account to delete. Exported files remain wherever you saved them and must be deleted separately.</p>
+    <h2>Scheduling and progress</h2>
+    <p>To record a missed day, use the previous-day arrow or date picker on the board, then record progress as usual. It counts toward the selected scheduled day. Future quests cannot be completed early.</p>
+    <p>Schedule edits affect today and future entries while preserving past records. Quest time cues do not create notifications; configure optional reminders separately in <strong>Manage → Notifications</strong>.</p>
+    <section aria-labelledby="account-edition">
+      <h2 id="account-edition">Upcoming version 1.0.9: account guide</h2>
+      <p><strong>This section previews an unreleased version.</strong> It does not describe the local-only app currently available to testers.</p>
+      <h3>Sign in and choose what to upload</h3>
+      <p>The account edition will use Google sign-in and store synchronized journals through Supabase. First sign-in and loading need internet. An older local-only journal can be exported before sign-in; uploading it requires a separate choice. If the account already has a journal, review the conflict before choosing which to keep. Apple sign-in is deferred.</p>
+      <h3>Create a first quest</h3>
+      <p>Choose one action, select its Guild and repeat days, then choose <strong>Create quest</strong>. Complete it after doing the action. A quest first due on a later day is saved for that date; use <strong>Edit schedule</strong> if you want different days. Restart setup from <strong>Manage → Getting started</strong>. Unsaved setup and practice remain temporary.</p>
+      <h3>Offline saves and synchronization</h3>
+      <p>Once your account journal has loaded, edits can save locally while offline. Reconnect and check synchronization before switching devices, signing out, clearing storage or uninstalling. A saved edit on one device does not mean it has reached another. Export JSON before troubleshooting unsynchronized data.</p>
+      <h3>Conflicts, recovery and free access</h3>
+      <p>When asked which journal to keep, review both versions before choosing. Recovery versions are available for 30 days; JSON export keeps an independent copy longer. Free feature access belongs to your app account and is separate from a journal backup. The initial free unlock needs internet; it does not request payment.</p>
+      <h3>Optional metrics</h3>
+      <p>Metrics start off. Reading Terms, signing in and unlocking free features do not turn them on. Use the separate control in account settings to opt in or withdraw.</p>
+      <h3>Delete an app account</h3>
+      <p>The account edition is designed to offer <strong>Manage → Account → Delete account</strong> and an authenticated web request. The <a href="../delete-account/">account-deletion page</a> explains current availability. The web tool is not available in this preview. Deleting the app account will not delete your Google account or exported files. Uninstalling and signing out are separate from cloud deletion.</p>
+      <p>Read the <a href="../privacy/">draft account-edition privacy policy</a> and <a href="../terms/">draft Terms</a>. Available local-only builds retain the <a href="../privacy/2026-09-10.html">September 10 privacy policy</a>.</p>
+    </section>
+  </main>
+  <footer>© 2026 Raul Figueiredo Pazetto · LordToad<br><a href="mailto:lordtoad.apps@gmail.com">lordtoad.apps@gmail.com</a><br><a href="../privacy/">Privacy</a> · <a href="../terms/">Terms</a> · <a href="../support/">Support</a></footer>
+</body>
+</html>

@@ -1,19 +1,59 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="The Daily Quest: offline personal quests, support and privacy."><title>Privacy policy · The Daily Quest</title><link rel="stylesheet" href="../style.css"><link rel="icon" href="../crest.svg"></head><body><header><img src="../crest.svg" alt=""><a href="../">The Daily Quest</a><nav aria-label="Main"><a href="../news/">News</a><a href="../support/">Support</a><a href="../privacy/">Privacy</a></nav></header><main><h1>Privacy policy</h1>
-<p>Effective date: September 10, 2026</p>
-<p>The Daily Quest (`com.lordtoad.thedailyquest`) is published by <strong>Raul Figueiredo Pazetto, publishing as LordToad</strong>. Contact: <strong>lordtoad.apps@gmail.com</strong>.</p>
-<h2>Your journal</h2>
-<p>Guilds, quests, schedules, targets, progress, completion timestamps, categories, priority, re-roll history, cues and optional check-in answers stay in the app's local storage. The publisher does not operate a journal server or collect your journal. There are no accounts, advertising, analytics, tracking or automatic journal synchronization.</p>
-<p>Android automatic app backup is disabled. The iOS app is configured to exclude its internal storage from automatic backup; device backup verification is part of pre-release testing. Export JSON before changing devices. Browser, Android and iPhone installations keep separate journals.</p>
-<h2>Exports and files</h2>
-<p>Only when you choose, the app saves CSV reports or JSON backups, imports a selected JSON file, or opens your device's share sheet. It does not request broad file access. Your selected storage provider or destination app may store or transmit the export under its own policy. Shared temporary files are private to the app; files older than 24 hours are removed when another export is prepared. The operating system may clear temporary files sooner.</p>
-<h2>Retention and deletion</h2>
-<p>Your journal remains until you replace it through restore, clear app/site storage, or uninstall the mobile app. Files exported elsewhere remain under your control and must be deleted separately. No online account exists to delete. Keep an exported backup if you need to recover your journal after uninstalling or changing devices.</p>
-<h2>Support email</h2>
-<p>If you email lordtoad.apps@gmail.com, the publisher receives your email address, message and attachments to respond to your request. Email is handled by Gmail under Google's privacy policy. Do not send a journal backup unless you intend to share it. Support correspondence is retained only as needed to handle the request and follow-up; you can ask for deletion by email, subject to applicable retention obligations.</p>
-<h2>Public website</h2>
-<p>The support website is hosted by GitHub Pages. We add no analytics, advertising, contact forms or tracking cookies. GitHub receives ordinary connection data, including IP addresses, to serve and secure the site under its privacy statement: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement.</a> Visiting this website does not upload the app's journal.</p>
-<h2>Permissions and updates</h2>
-<p>Journal features work offline. Optional local reminders request notification permission only when enabled and can be disabled in Manage or device Settings. Reminder preferences stay on this installation and are excluded from JSON backups. Reminder text contains no quest names or counts, and no push-notification server receives your journal. Android restores scheduled reminders after a device restart, subject to operating-system restrictions. The app does not request broad storage, contacts, location, camera or microphone access. For installations distributed by Google Play, Google Play may periodically require an internet connection to verify installation through its installer check. This check does not send your journal to the publisher. Material privacy changes will be described here and in the app.</p>
-<p>Public policy: <a href="https://lordtoad.github.io/the-daily-quest-site/privacy/">https://lordtoad.github.io/the-daily-quest-site/privacy/</a>
-Support: <a href="https://lordtoad.github.io/the-daily-quest-site/support/">https://lordtoad.github.io/the-daily-quest-site/support/</a>
-</p></main><footer>© 2026 Raul Figueiredo Pazetto · LordToad<br><a href="mailto:lordtoad.apps@gmail.com">lordtoad.apps@gmail.com</a></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Draft privacy policy for the upcoming Google account edition, with the original local-only policy retained.">
+  <meta name="robots" content="noindex">
+  <title>Privacy policy — account edition draft · The Daily Quest</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="../crest.svg">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header><img src="../crest.svg" alt=""><a class="brand" href="../">The Daily Quest</a><nav aria-label="Main"><a href="../news/">News</a><a href="../support/">Support</a><a href="../privacy/" aria-current="page">Privacy</a><a href="../terms/">Terms</a></nav></header>
+  <main id="main" tabindex="-1">
+    <h1>Privacy policy</h1>
+    <aside class="notice" aria-labelledby="privacy-status">
+      <h2 id="privacy-status">Draft for version 1.0.9</h2>
+      <p><strong>Not yet effective. Effective date: pending publication.</strong> This previews the upcoming account edition, which is not yet available.</p>
+      <p>For available local-only builds through version 1.0.8, read the <a href="2026-09-10.html">current privacy policy, effective September 10, 2026</a>.</p>
+    </aside>
+    <p>The Daily Quest (<code>com.lordtoad.thedailyquest</code>) is published by <strong>Raul Figueiredo Pazetto, publishing as LordToad</strong>. Contact: <a href="mailto:lordtoad.apps@gmail.com">lordtoad.apps@gmail.com</a>.</p>
+    <h2>Accounts and synchronized journals</h2>
+    <p>The account edition will use Google sign-in and Supabase authentication and journal storage. Google supplies authentication information such as an account identifier, email address and profile information allowed by your Google settings. The app does not receive your Google password. Apple sign-in is not offered in this edition.</p>
+    <p>Your journal includes Guilds, quest names and descriptions, schedules, targets, progress, completion dates, Main and Side categories, draw and re-roll history, cues, optional check-in answers and journal preferences. An account-specific local copy supports offline editing. Journal snapshots are sent to the account backend over HTTPS for synchronization and conflict recovery. The backend processes these snapshots; journal storage is not end-to-end encrypted.</p>
+    <p>The production Supabase database is in <strong>São Paulo, Brazil</strong>. Google and other service infrastructure may process authentication, connection and service data elsewhere under their policies. The app has no advertising or payment collection.</p>
+    <p>Onboarding completion and dismissal are stored with the account on the device, separately from cloud journal snapshots. Notification and sensory preferences stay on the installation. Android automatic app backup is disabled; cloud synchronization and files you export are separate.</p>
+    <h2>Moving from a local-only journal</h2>
+    <p>Versions through 1.0.8 keep journals locally. The account edition offers a JSON export before sign-in and asks you separately before adopting and uploading that journal. If local and cloud journals conflict, you choose which to keep. Reading Terms or signing in does not replace the upload choice.</p>
+    <h2>Local saves, recovery and free access</h2>
+    <p>Edits save on the device with a synchronization queue. A local save does not mean another device has received it. If the connection or backend is unavailable, saved edits wait for reconnection. A previously loaded account journal supports offline edits; first sign-in and loading require internet.</p>
+    <p>Conflicts preserve recovery versions for 30 days. Expired recovery versions are removed by scheduled cleanup; a service interruption can delay cleanup. Export a full JSON backup if you need to keep a copy longer.</p>
+    <p>Choosing <strong>Unlock for free</strong> creates a separate account access record with the account identifier and grant time. It supports access on your other devices and cached offline access. It is not included in journal exports. Initial unlocking requires a connection. There is no payment, subscription or automatic charge.</p>
+    <h2>Optional usability metrics</h2>
+    <p>Metrics start off and are separate from login, journal upload and free access. You may opt in or withdraw in account settings. Withdrawal stops new app collection and clears queued app analytics data; it does not automatically remove reports already processed.</p>
+    <p>When enabled, Firebase and Google Analytics receive selected events about screens, onboarding, completed app actions, export and import outcomes, synchronization outcomes and categorized failures. Events can include a random analytics identifier associated with your account for consent and deletion handling, app or browser instance identifiers, platform information and SDK-generated device and app metadata. Receiving services also see connection metadata.</p>
+    <p>The app excludes quest and Guild text, check-in answers, progress quantities, email addresses, authentication tokens and raw error messages from its analytics events. Account-linked or pseudonymous metrics are not anonymous. Analytics providers retain and process reports under their configured settings and policies; aggregated reports may not support removal of one person's contribution.</p>
+    <h2>Exports and support messages</h2>
+    <p>When you choose, the app saves a full JSON backup, exports a CSV report, opens a selected JSON file or uses your device's share sheet. Full backups and synchronized journals retain stored history even when the current view is limited. CSV reports cannot restore a journal.</p>
+    <p>Files saved or shared elsewhere are under your control and the destination provider's policy. Shared temporary files remain private to the app; files older than 24 hours are removed when another export is prepared. Your operating system may remove them sooner.</p>
+    <p>If you email support, the publisher receives your email address, message and attachments to answer the request. Gmail processes the correspondence under Google's policy. Send a journal backup only if you intend to share its contents. Messages are kept as needed for the request and follow-up; you can request deletion, subject to applicable retention obligations.</p>
+    <h2>Account deletion and retention</h2>
+    <p>Uninstalling, signing out or clearing local storage is separate from cloud account deletion. It can remove unsynchronized changes on that installation. Export anything you want to keep before removing local data.</p>
+    <p>The account edition is designed to offer deletion at <strong>Manage → Account → Delete account</strong> and through an authenticated website without reinstalling the app. Google reauthentication protects the request. The <a href="../delete-account/">account-deletion page</a> explains its current availability; the web request tool is not available in this preview.</p>
+    <p>The deletion process blocks further account writes and removes journals, recovery copies and free-access records from the active app database. It does not delete your Google account or exported files. Other installations clear cached account data when they next verify the account's deleted status; a device that stays offline cannot receive that update.</p>
+    <p>Restricted deletion-job information is kept while authentication cleanup and analytics deletion requests are retried. Completed tasks are removed; the job is removed when its tasks are finished. A failing task can remain pending and require follow-up. Provider processing, logs and backups can have different retention from the active database. Deletion is not a promise of instantaneous erasure from every system.</p>
+    <h2>Website, reminders and connectivity</h2>
+    <p>This website is hosted on GitHub Pages. It has no added advertising or general page analytics. GitHub receives connection information, including IP addresses, to serve and secure pages under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. An ordinary news or support visit does not upload a journal. The future authenticated deletion tool will connect to the account backend.</p>
+    <p>Reminders are optional and scheduled on the device after notification permission is granted. Reminder text contains no quest names or counts; a remote push service does not receive your journal. Device settings can delay delivery. Sign-in, synchronization, initial free unlocking and account deletion require internet. Google Play may separately require connectivity for its installer check.</p>
+    <h2>Policy versions and contact</h2>
+    <ul>
+      <li><strong>Account edition, version 1.0.9:</strong> this draft; effective date pending publication.</li>
+      <li><strong>Local-only builds through 1.0.8:</strong> <a href="2026-09-10.html">unchanged September 10, 2026 policy</a>.</li>
+    </ul>
+    <p>See the <a href="../terms/">draft service-use Terms</a> or <a href="../support/">contact support</a> about your data. The available local-only app retains its existing policy.</p>
+  </main>
+  <footer>© 2026 Raul Figueiredo Pazetto · LordToad<br><a href="mailto:lordtoad.apps@gmail.com">lordtoad.apps@gmail.com</a><br><a href="../privacy/">Privacy</a> · <a href="../terms/">Terms</a> · <a href="../support/">Support</a></footer>
+</body>
+</html>
