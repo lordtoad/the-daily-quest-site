@@ -13,10 +13,30 @@
   <header><img src="../crest.svg" alt=""><a href="../">The Daily Quest</a><nav aria-label="Main"><a href="./" aria-current="page">News</a><a href="../support/">Support</a><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a></nav></header>
   <main id="main" tabindex="-1">
     <h1>News</h1>
+    <article aria-labelledby="release-1-0-11">
+      <h2 id="release-1-0-11">Version 1.0.11: What's new</h2>
+      <p><time datetime="2026-09-30">September 30, 2026</time> · Build 12</p>
+      <p id="release-1-0-11-status"><strong>Available to Google Play internal testers.</strong> Google Play confirmed build 12 on September 30, 2026. Eligible testers can <a href="https://play.google.com/apps/internaltest/4701561660649429959">open the internal testing page</a>. Closed Alpha remains on build 10 while backed-up device acceptance is completed.</p>
+      <ul>
+        <li><strong>Brazilian Portuguese:</strong> Use translated screens, onboarding, Guild story, reminders, and app messages.</li>
+        <li><strong>Language choice:</strong> Follow your device language or choose English or Português (Brasil) before login and in Manage.</li>
+        <li><strong>Local formatting:</strong> Read dates, weekdays, numbers, and quest counts in your selected language.</li>
+        <li><strong>Future languages:</strong> Shared translation catalogs support additional languages in later releases.</li>
+      </ul>
+      <h3>Important details</h3>
+      <ul>
+        <li><strong>Saved content:</strong> Changing language preserves saved quest names, Guild names, personal oaths, progress, and XP.</li>
+        <li><strong>Device preference:</strong> Language stays on each device; newly created starter content uses the selected language.</li>
+        <li><strong>Compatibility:</strong> Upgrading from 1.0.9 includes schema-v3 changes; back up first and update every device before editing, because older versions cannot read v3 journals.</li>
+        <li><strong>Removed fields:</strong> Migration from 1.0.9 removes old cue and check-in fields; retain an old JSON backup if needed.</li>
+        <li><strong>Language boundaries:</strong> CSV headers remain English; Google and Android screens and external pages follow their own settings.</li>
+        <li><strong>Availability:</strong> Closed Alpha promotion requires backed-up Play upgrades and two-device acceptance; production access is not available.</li>
+      </ul>
+    </article>
     <article aria-labelledby="release-1-0-10">
       <h2 id="release-1-0-10">Version 1.0.10: What's new</h2>
       <p><time datetime="2026-09-30">September 30, 2026</time> · Build 11</p>
-      <p id="release-1-0-10-status"><strong>Available to Google Play internal testers.</strong> Google Play confirmed build 11 on September 30, 2026. Eligible testers can <a href="https://play.google.com/apps/internaltest/4701561660649429959">open the internal testing page</a>. Closed Alpha remains on build 10 while backed-up device acceptance is completed.</p>
+      <p id="release-1-0-10-status"><strong>Superseded internally by build 12.</strong> Google Play first confirmed build 11 on September 30, 2026. Eligible testers can <a href="https://play.google.com/apps/internaltest/4701561660649429959">open the internal testing page</a>. Closed Alpha remains on build 10 while backed-up device acceptance is completed.</p>
       <ul>
         <li><strong>Guild story:</strong> Meet the Guild Master, choose daily starter quests, and take your personal oath.</li>
         <li><strong>Saved rewards:</strong> See completion stamps, card exchanges, and ordered Quest, Guild, and Adventurer level-up chapters.</li>
@@ -39,7 +59,7 @@
     <article aria-labelledby="release-1-0-9">
       <h2 id="release-1-0-9">Version 1.0.9: What's new</h2>
       <p><time datetime="2026-09-27">September 27, 2026</time> · Build 10</p>
-      <p id="release-1-0-9-status"><strong>Available to closed Alpha testers; superseded internally by build 11.</strong> Google Play first confirmed build 10 on both tracks on September 27, 2026. It passed a backed-up Play upgrade and two-device testing. Eligible testers can open the <a href="https://play.google.com/apps/testing/com.lordtoad.thedailyquest">closed Alpha page</a> or <a href="https://play.google.com/apps/internaltest/4701561660649429959">internal testing page</a>.</p>
+      <p id="release-1-0-9-status"><strong>Available to closed Alpha testers; superseded internally by build 12.</strong> Google Play first confirmed build 10 on both tracks on September 27, 2026. It passed a backed-up Play upgrade and two-device testing. Eligible testers can open the <a href="https://play.google.com/apps/testing/com.lordtoad.thedailyquest">closed Alpha page</a> or <a href="https://play.google.com/apps/internaltest/4701561660649429959">internal testing page</a>.</p>
       <ul>
         <li><strong>Accounts:</strong> Sign in with Google and keep your quest journal synchronized across devices.</li>
         <li><strong>Offline editing:</strong> Save changes to a loaded journal offline and synchronize after reconnecting.</li>
@@ -53,7 +73,7 @@
         <li><strong>Existing progress:</strong> Export a JSON backup before signing in; choose separately whether to adopt and upload the local journal.</li>
         <li><strong>Connectivity:</strong> First sign-in, initial journal loading, and the free unlock require internet.</li>
         <li><strong>Sign-in:</strong> Google is the normal account route; Apple sign-in is deferred.</li>
-        <li><strong>Availability:</strong> Build 10 remains on closed Alpha and was replaced internally by build 11; public production access is not yet available.</li>
+        <li><strong>Availability:</strong> Build 10 remains on closed Alpha and was replaced internally by build 12; public production access is not yet available.</li>
       </ul>
     </article>
     <article aria-labelledby="release-1-0-8">
